@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     // port: 3000, // Change port to 3000
     proxy: {
-      "/api" : "http://localhost:3001"
+      "/api" : "http://localhost:3001" // This made them communicate with each other :)
     }
   },
   build: {

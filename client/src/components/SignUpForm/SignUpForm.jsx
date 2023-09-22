@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
-import { signUp } from '../../utilities/users-service';
+import React, { useState } from "react";
+import { signUp } from "../../utilities/users-service";
 
-
-export default function SignUpForm({setUser}) {
-  const [formData, setFormData] =useState({
-    name: '',
-    email:'',
-    password:'',
-    confirm: '',
-    error:''
-  })
+export default function SignUpForm({ setUser }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirm: "",
+    error: "",
+  });
 
   const disable = formData.password !== formData.confirm;
 
